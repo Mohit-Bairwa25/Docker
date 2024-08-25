@@ -1,0 +1,21 @@
+• docker run -it ubuntu
+root@9cee3e9f6bee:/# 
+
+This is a Ubuntu Run Directory
+
+•root@9cee3e9f6bee:/# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+•root@9cee3e9f6bee:/# cd home/
+root@9cee3e9f6bee:/home#
+
+•root@9cee3e9f6bee:/home# mkdir hello
+root@9cee3e9f6bee:/home# cd hello
+root@9cee3e9f6bee:/home/hello#
+
+An Ubuntu command
+If the specified file doesn’t exist, "touch" will create an empty file with the given name.
+
+•root@9cee3e9f6bee:/home/hello# touch hello-ubuntu.txt
+root@9cee3e9f6bee:/home/hello# ls
+hello-ubuntu.txt

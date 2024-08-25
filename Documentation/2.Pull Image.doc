@@ -1,0 +1,11 @@
+• docker pull ubuntu
+
+Using default tag: latest
+latest: Pulling from library/ubuntu
+31e907dcc94a: Pull complete
+Digest: sha256:8a37d68f4f73ebf3d4efafbcf66379bf3728902a8038616808f04e34a9ab63ee
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+What's next:
+    View a summary of image vulnerabilities and recommendations → docker scout quickview ubuntu

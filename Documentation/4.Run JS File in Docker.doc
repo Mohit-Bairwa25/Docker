@@ -1,0 +1,20 @@
+•cd hello-docker
+
+•docker build -t hello-docker .
+
+To Clear Terminal
+•clear
+
+To Verify Images
+•docker images
+REPOSITORY     TAG       IMAGE ID       CREATED       SIZE  
+hello-docker   latest    10f3dc29abd7   4 hours ago   154MB 
+ubuntu         latest    edbfe74c41f8   3 weeks ago   78.1MB
+
+•docker run hello-docker
+Hello Docker!
+
+•docker run -it hello-docker sh
+/app # node hello.js
+Hello Docker!
+/app # 
