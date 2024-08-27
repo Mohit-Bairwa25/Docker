@@ -1,0 +1,7 @@
+•cd react-docker
+•docker login
+
+•docker tag <Directory> <Username>/<Docker Image>
+•docker tag react-docker mohitbairwa25/react-docker
+•docker push mohitbairwa25/react-docker
+
