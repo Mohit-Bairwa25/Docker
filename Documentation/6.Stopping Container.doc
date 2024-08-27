@@ -1,0 +1,17 @@
+Stopping Specific Container
+
+•docker stop <id>
+
+Stopping All Container
+
+•docker container prune
+
+To Stop a Running Container
+
+•docker rm <Name/Id>
+•docker rm <Name/Id> --force
+
+Delete All Images/Volumes/Containers
+
+•docker build -t react-docker .
+•docker run -p 5173:5173 react-docker

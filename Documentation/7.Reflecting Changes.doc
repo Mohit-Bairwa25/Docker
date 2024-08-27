@@ -1,0 +1,18 @@
+•docker run -p 5173:5173 -v "$(pwd):/app" -v /app/node_modules react-docker
+
+File Watching in Docker
+Docker can have problems with file watching due to how it handles file systems, especially on non-Linux platforms. The most common solution is to use polling for file changes.
+
+Enable Polling in Vite: Add polling to your Vite config to ensure file changes are detected:
+
+export default defineConfig({
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
+});
+
+Environment Variable: Set the environment variable CHOKIDAR_USEPOLLING=true to force polling when watching files. You can add this directly to your docker run command:
+
+•docker run -p 5173:5173 -v "$(pwd):/app" -v /app/node_modules -e CHOKIDAR_USEPOLLING=true react-docker

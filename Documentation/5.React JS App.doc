@@ -5,4 +5,20 @@
 •cd react-docker
 •clear
 
+Added Dockerfile & .dockerignore
+
+•docker build -t react-docker .
+
+Kill the Terminal
+
+•cd react-docker
+•docker run -p 5173:5173 react-docker
+
+Add --host
+  "scripts": 
+    "dev": "vite --host",
+
+•docker ps
+•docker ps -a
+
 
