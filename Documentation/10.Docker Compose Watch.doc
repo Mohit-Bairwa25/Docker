@@ -1,0 +1,21 @@
+Download starter-mern-docker folder from git repo
+https://github.com/adrianhajdin/docker-course.git
+
+rename it to mern-docker
+Add Dockerfile and .dockerignore in frontend & backend folder
+
+copy paste compose.yml file to mern-docker folder
+• cd mern-docker
+•docker compose up
+
+Split the terminal
+•docker compose watch
+
+This will Reflect Changes in Website
+
+For Backend
+Split the terminal Again
+•cd backend
+•npm i colors
+
+Check For https://localhost:8000

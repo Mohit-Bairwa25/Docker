@@ -1,0 +1,16 @@
+Copy starter_next-docker Folder
+
+•cd next-docker
+•docker init
+
+? What application platform does your project use? Node   
+? What version of Node do you want to use? (20.16.0)
+? Which package manager do you want to use? npm
+? Do you want to run "npm run build" before starting your server? No     
+? What command do you want to use to start the app? [tab for suggestions] (npm start) npm run dev
+? What port does your server listen on? 3000
+
+Copy Paste Dockerfile & compose.yml
+
+•docker compose up
+•docker compose watch

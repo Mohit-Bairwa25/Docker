@@ -1,0 +1,42 @@
+•npm create vite@latest vite-project
+√ Select a framework: » React
+√ Select a variant: » TypeScript
+
+• cd vite-project
+•docker init
+What version of Node do you want to use? (20.16.0) 
+Which package manager do you want to use? npm
+Do you want to run "npm run build" before starting your server? No     
+What command do you want to use to start the app? [tab for suggestions] npm run dev
+What port does your server listen on? 5173
+
+Replace the vite-project Dockerfile with react-docker Dockerfile
+
+Changes in compose.yml
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+•docker compose up
+If You get Permission Denied Then Run VS Code as Administrator
+
+If You Get this Error
+✔ Container vite-project-web-1 Stopped                                                                                                                           0.0s 
+Error response from daemon: driver failed programming external connectivity on endpoint vite-project-web-1 (0a02c4bd73ca03f858133a5a182f30d36cf8fe37f25479cb194ac2317c04fbf3): 
+Bind for 0.0.0.0:5173 failed: port is already allocated
+
+Stop Your Already Running Container
+
+If Your Site is Not Showing up
+  "scripts": 
+    "dev": "vite --host",
+
+ReStart
+
